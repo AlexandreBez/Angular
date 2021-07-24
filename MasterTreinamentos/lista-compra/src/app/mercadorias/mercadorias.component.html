@@ -1,0 +1,41 @@
+<div style="text-align: center">
+    <h1>
+        {{title}}
+    </h1>
+</div>
+<div>
+    <table class="center-hor layout-table" width="500px">
+        <thead>
+            <tr class="header-table-gray">
+                <th>
+                    ID
+                </th>
+                <th>
+                    Nome Mercadoria
+                </th>
+                <th>
+                    Quantidade em estoque
+                </th>
+                <th>
+                  Quantidade minima
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="text-center" *ngFor="let mercadoria of mercadorias;let i=index">
+                <td>
+
+                </td>
+                <td>
+                    {{mercadoria.id}}
+                </td>
+                <td>
+                    {{mercadoria.descricao}}
+                </td>
+                <td>
+                    {{mercadoria.quantidade}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
