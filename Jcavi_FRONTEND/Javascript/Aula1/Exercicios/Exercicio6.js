@@ -1,44 +1,50 @@
 let pessoas = [
-    [1, "João", 1.67],
-    [2, "Marcela", 1.85],
-    [3, "Andre", 1.70],
-    [4, "Luana", 1.60],
-    [5, "Maya", 1.75],
-    [6, "Sofia", 1.55],
-    [7, "Andy", 1.69],
-    [8, "Richard", 1.89],
-    [9, "Ana", 1.56],
-    [10, "Vitor", 1.66],
-    [11, "Cauã", 1.75],
-    [12, "Rachel", 1.63],
-    [13, "Naomi", 1.76],
-    [14, "Victor", 1.57],
-    [15, "Lara", 1.90]
+    1.67,
+    1.85,
+    1.70,
+    1.60,
+    1.75,
+    1.55,
+    1.69,
+    1.89,
+    1.56,
+    1.66,
+    1.75,
+    1.63,
+    1.76,
+    1.57,
+    1.81
 ];
 
-let linha = 0;
-let coluna = 0;
+let maiorAltura = 0;
+let menorAltura = 5;
+let alturaEspecifica = 0;
+let soma = 0;
 
-let auxiliarMenorAltura = 0;
-let auxiliarMaiorAltura = 0;
-
-for (linha; linha <= pessoas.length; linha++) {
-
-    for (coluna; coluna <= 1; coluna++) {
-
-        if (pessoas[linha][1] <= 1.60) {
-            auxiliarMenorAltura = pessoas[linha][1];
-            console.log("Menor altura: " + auxiliarMenorAltura);
-        }
-
-        if (pessoas[linha][1] >= 1.80) {
-            auxiliarMaiorAltura = pessoas[linha][1];
-            console.log("Maior altura: " + auxiliarMaiorAltura);
-        }
-
+for (let i = 0; i < pessoas.length; i++) {
+    
+    let pessoa = pessoas[i];
+    
+    soma += pessoas[i]; 
+    
+    if (pessoa > maiorAltura) {
+        maiorAltura = pessoa;
+    }
+    
+    if (pessoa < menorAltura) {
+        menorAltura = pessoa;
     }
 
+    if (pessoa == 1.81) {
+        alturaEspecifica++;
+    }
 
 }
 
+let media = soma / 15;
+
+console.log(`A maior altura: ${maiorAltura}`);
+console.log(`A menor altura: ${menorAltura}`);
+console.log(`A media das alturas: ${media}`);
+console.log(`A quantidade de pessoas com 1.81 de altura: ${alturaEspecifica}`);
 

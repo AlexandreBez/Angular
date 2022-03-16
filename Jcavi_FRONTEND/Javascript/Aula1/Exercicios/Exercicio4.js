@@ -37,6 +37,7 @@ function calculoParcela(parcela, valorProduto) {
 
             valorParcelas = valorDoProdutoComJuros / 3;
             console.log("Valor das parcelas em 3X será de R$", valorParcelas);
+            
         }else if (parcela == 5) {
 
             console.log("Preço em 5X...");

@@ -24,8 +24,8 @@ function verificaValores(nome, nota1, nota2, nota3){
 }
 
 /*
-    Validates if it verificaValores() returns true 
-    and performs the fail or pass validation by taking the average and printing it to the screen.
+    Validates if verificaValores() returns true 
+    and performs the fail or pass validation by taking the average and printing on the screen.
 */
 function mediaNotas(nome, nota1, nota2, nota3){
 
