@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="alexandria_library" schema="alexandria_library" type="MySQL - 8.0.28">
+   <tables>
+      <table catalog="alexandria_library" name="empregado" numRows="0" remarks="" type="TABLE">
+         <column autoUpdated="true" defaultValue="null" digits="0" id="0" name="id_empregado" nullable="false" remarks="" size="10" type="INT" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="email" nullable="false" remarks="" size="100" type="VARCHAR" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="pass" nullable="false" remarks="" size="200" type="VARCHAR" typeCode="12"/>
+         <primaryKey column="id_empregado" sequenceNumberInPK="1"/>
+         <index name="PRIMARY" unique="true">
+            <column ascending="true" name="id_empregado"/>
+         </index>
+      </table>
+   </tables>
+</database>

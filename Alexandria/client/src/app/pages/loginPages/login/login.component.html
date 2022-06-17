@@ -1,0 +1,39 @@
+<div class="alert alert-danger">
+
+</div>
+
+<div class="container rootContainer">
+
+    <img src="../../../../assets/imgs/logo.png" width="180" height="170" alt="alexandria logo" class="imgLogo" />
+
+    <form>
+
+        <div class="mb-3">
+            <label class="form-label labelMisc">
+                <i class="fas fa-user"></i>
+                Email
+            </label>
+            <input type="email" placeholder="Digite seu email"
+                class="form-control inputMisc"  [(ngModel)]="email"
+            />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label labelMisc">
+                <i class="fas fa-lock"></i>
+                Password
+            </label>
+            <input type="password" placeholder="Digite sua senha"
+                class="form-control inputMisc" [(ngModel)]="password"
+            />
+        </div>
+
+    </form>
+
+    <button type="submit" class="btn btn-dark btnMisc">Login</button>
+
+    <br>
+
+    <a href="#" class="link">Esqueceu a senha? Clique aqui</a>
+
+</div>
