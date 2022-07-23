@@ -1,14 +1,18 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "debb8605-7437-43d4-8685-df9c62232902"
+    "analytics": "10106b00-dadf-4db3-82d8-da41b1bdab1f"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ShopListAndReceiptBook": {
+    "directives": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -16,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/shop-list-and-receipt-book",
+            "outputPath": "dist/directives",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -26,12 +30,11 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/boostrap/dist/css/bootstrap.css",
-              "node_modules/boostrap-icons/font/bootstrap-icons.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/boostrap/dist/js/bootstrap.js"
+              "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
@@ -39,13 +42,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
                 }
               ],
               "fileReplacements": [
@@ -71,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ShopListAndReceiptBook:build:production"
+              "browserTarget": "directives:build:production"
             },
             "development": {
-              "browserTarget": "ShopListAndReceiptBook:build:development"
+              "browserTarget": "directives:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ShopListAndReceiptBook:build"
+            "browserTarget": "directives:build"
           }
         },
         "test": {
@@ -105,5 +108,5 @@
       }
     }
   },
-  "defaultProject": "ShopListAndReceiptBook"
+  "defaultProject": "directives"
 }
