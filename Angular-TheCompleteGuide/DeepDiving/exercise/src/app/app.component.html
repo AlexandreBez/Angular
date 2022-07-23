@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <!-- Get the component on game control end the event -->
+      <app-game-control (startedInterval)="onStartedInterval($event)"></app-game-control>
+      <!-- show the number -->
+      <p>{{ showNumber }}</p>
+    </div>
+
+    <div class="col-xs-12">
+      <!-- Get the odds numbers on game control numbers and show -->
+      <app-odd *ngFor="let odd of odds" [number]="odd"></app-odd>
+    </div>
+
+    <div class="col-xs-12">
+      <!-- Get the evens numbers on game control numbers and show -->
+      <app-even *ngFor="let even of evens" [number]="even"></app-even>
+    </div>
+
+  </div>
+</div>

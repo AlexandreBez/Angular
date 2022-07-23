@@ -5,19 +5,20 @@ import { FormsModule } from '@angular/forms';
 // components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './pages/loginPages/login/login.component';
+import { TemplateModule } from './template/template.module';
+
 
 // modules
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TemplateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
