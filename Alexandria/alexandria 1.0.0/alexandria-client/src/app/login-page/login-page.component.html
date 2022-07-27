@@ -1,0 +1,44 @@
+<div class="container formContainer">
+
+    <div class="alert alert-danger" role="alert" *ngIf="errorAlert">
+        <i class="bi bi-exclamation-diamond"></i>
+        {{ errorMessage }}
+    </div>
+
+    <img src="https://as2.ftcdn.net/v2/jpg/02/81/87/95/1000_F_281879567_AvXxm8Fn5N4ZkWez0KAs3ix32fHlPE0Q.jpg"
+        class="logoImage" width="35%" alt="test">
+
+    <hr>
+
+    <form>
+
+        <div class="mb-3">
+            <label class="form-label">
+                <i class="bi bi-person-circle"></i>
+                Email
+            </label>
+            <input id="emailInput" class="form-control" type="email" placeholder="example@example.com"
+                [ngModelOptions]="{standalone: true}" [(ngModel)]="emailInput">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">
+                <i class="bi bi-lock"></i>
+                Password
+            </label>
+            <input id="passwordInput" class="form-control" type="password" placeholder="************"
+                [ngModelOptions]="{standalone: true}" [(ngModel)]="passwordInput">
+        </div>
+
+        <button id="loginButton" class="btn btn-primary" (click)="onLoginClicked()">
+            <i class="bi bi-box-arrow-in-right"></i>
+            Login
+        </button>
+
+    </form>
+
+    <div class="recoverArea">
+        <a id="recoverLink" href="#">Forgot the password? click here</a>
+    </div>
+
+</div>

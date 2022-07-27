@@ -1,0 +1,27 @@
+.formContainer{
+    background-color: white;
+    border: 1px solid grey;
+    width: 34%;
+    margin-top: 12%;
+}
+
+.logoImage{
+    margin-left: 33%;
+    margin-top: 2%;
+    border-radius: 30%;
+    border: 1px solid black;
+}
+
+#loginButton{
+    margin-left: 35%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.recoverArea{
+    margin: 3% 0 3% 17%;
+}
+
+.alert{
+    margin-top: 2%;
+}
